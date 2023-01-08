@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = config("SECRET_KEY", default="django-insecure$mythodia.settings.local")
 
-DEBUG = config("DEBUG", default=True, cast=bool)
+# DEBUG = config("DEBUG", default=True, cast=bool)
 
 ALLOWED_HOSTS = config("ALLOWED_HOSTS", default="127.0.0.1,localhost", cast=Csv())
 
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "storages",
     "tailwind",
     "corsheaders",
+    "fontawesomefree",
     # Our Apps
     "mythodia.modules.core",
     "mythodia.modules.theme",
@@ -103,6 +104,12 @@ DATABASES = {
     )
 }
 
+# ==============================================================================
+# FIREBASE SETTINGS
+# ==============================================================================
+
+FIREBASE_ORM_CERTIFICATE = "../static/mythodia-firebase-adminsdk.json"
+FIREBASE_ORM_BUCKET_NAME = "mythodia-44a16.appspot.com"
 
 # ==============================================================================
 # AUTHENTICATION AND AUTHORIZATION SETTINGS
@@ -171,7 +178,7 @@ MEDIA_ROOT = BASE_DIR.parent / "media"
 # ==============================================================================
 
 TAILWIND_APP_NAME = "mythodia.modules.theme"
-TAILWIND_CSS_PATH = "css/bundle/styles.css"
+TAILWIND_CSS_PATH = "css/dist/styles.css"
 
 # ==============================================================================
 # FIRST-PARTY SETTINGS

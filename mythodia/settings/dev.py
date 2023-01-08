@@ -6,6 +6,7 @@ import platform
 
 current_os = platform.system()
 
+DEBUG = True
 
 INSTALLED_APPS += [
     "debug_toolbar",
