@@ -74,7 +74,7 @@ const HomePage = ({ setShowImageModal, setModalImageSrc }) => {
                 <a href="/players/dm" className="underline font-bold">
                   DM
                 </a>
-                , The dungeon master
+                , The dungeon master - Master of worlds
               </li>
             </ul>
           </div>
