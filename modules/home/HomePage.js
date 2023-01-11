@@ -14,7 +14,7 @@ const HomePage = ({ setShowImageModal, setModalImageSrc }) => {
     <>
       <h1 className="text-4xl font-medium mb-2">The universe of Mythodia</h1>
       <div className="flex flex-col gap-8">
-        <section className="flex gap-2">
+        <section className="flex gap-2 flex-col md:flex-row">
           <div className="relative flex-1">
             <Image
               src={mythodiaMap}
@@ -36,7 +36,7 @@ const HomePage = ({ setShowImageModal, setModalImageSrc }) => {
             for advice and aid when necessary.
           </p>
         </section>
-        <section className="flex gap-2">
+        <section className="flex gap-2 flex-col-reverse md:flex-row">
           <div className="flex-1 text-lg leading-5">
             The campaign is played by the following characters:
             <ul className="list-disc list-inside">

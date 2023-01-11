@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const BaseHeader = () => {
   return (
-    <header className="bg-dark-parchment flex justify-between">
-      <Link href={"/"} className="flex pl-2">
+    <header className="bg-dark-parchment flex flex-col md:flex-row justify-between">
+      <Link href={"/"} className="flex pl-2 justify-center md:justify-start">
         <Image
           src="/images/DnD-Symbol.png"
           alt="dnd symbol"
@@ -15,7 +15,7 @@ const BaseHeader = () => {
           Mythodia
         </h1>
       </Link>
-      <nav className="flex pr-2">
+      <nav className="flex flex-col md:flex-row pr-2">
         <Link
           href={"/"}
           className="flex items-center text-xl font-semibold px-2 text-white hover:bg-parchment hover:text-black transition-all"
