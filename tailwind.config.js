@@ -17,6 +17,10 @@ module.exports = {
       minHeight: {
         120: " 30rem",
       },
+      spacing: {
+        128: "32rem",
+        192: "48rem",
+      },
     },
   },
   plugins: [],

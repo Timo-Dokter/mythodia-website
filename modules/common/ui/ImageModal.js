@@ -12,19 +12,24 @@ const ImageModal = ({ showImageModal, setShowImageModal, modalImageSrc }) => {
 
   return (
     <div
-      className="fixed flex justify-center items-center top-0 left-0 right-0 z-50 w-full h-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full bg-gray-600 bg-opacity-60 cursor-pointer"
-      onClick={() => {
-        setShowImageModal(false);
-      }}
+      className="relative z-10"
+      aria-labelledby="modal-title"
+      role="dialog"
+      aria-modal="true"
+      onClick={() => setShowImageModal(false)}
     >
-      <div className="relative max-w-7xl md:h-auto">
-        <div className="relative bg-white rounded-lg shadow">
-          <div className="p-6 space-y-6">
-            <Image
-              src={modalImageSrc}
-              alt="img on modal"
-              className="opacity-100"
-            />
+      <div className="fixed inset-0 z-10 overflow-y-auto">
+        <div className="flex min-h-full items-start justify-center p-4 text-center bg-gray-600 bg-opacity-70 sm:items-center sm:p-0">
+          <div className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:max-w-7xl sm:max-h-192">
+            <div className="bg-white px-4 py-4">
+              <div className="text-center sm:mt-0 sm:text-left">
+                <Image
+                  src={modalImageSrc}
+                  alt="img on modal"
+                  className="h-full"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
