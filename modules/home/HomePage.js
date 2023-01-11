@@ -62,7 +62,7 @@ const HomePage = ({ setShowImageModal, setModalImageSrc }) => {
                 <a href="/players/morleg" className="underline font-bold">
                   Curundil M. Lómion
                 </a>
-                , The elf bard - College of Eloquence
+                , The Elven bard - College of Eloquence
               </li>
               <li>
                 <a href="/players/dylan" className="underline font-bold">
