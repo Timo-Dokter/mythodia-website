@@ -7,14 +7,12 @@ module.exports = {
     extend: {
       backgroundImage: {
         "mythodia-map": "url(/images/mythodia-map.png)",
+        "the-inner-planes-map": "url(/images/the-inner-planes.png)",
       },
       colors: {
         "light-parchment": "#FFFCF2",
         parchment: "#F4D2A2",
         "dark-parchment": "#EAC18B",
-      },
-      fontFamily: {
-        sans: ["url(/fonts/Scala.otf)", ...defaultTheme.fontFamily.sans],
       },
       minHeight: {
         120: " 30rem",
