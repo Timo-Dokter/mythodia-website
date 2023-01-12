@@ -1,5 +1,11 @@
 import Image from "next/image";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Autoplay } from "swiper";
+import "swiper/css";
+
+// import ImageCarousel from "../../common/ui/ImageCarousel";
+
 import xeor from "../../../public/images/characters/players/xeor.png";
 import daisy from "../../../public/images/characters/players/daisy.png";
 import cosmo from "../../../public/images/characters/players/cosmo.png";
@@ -7,6 +13,8 @@ import curundil from "../../../public/images/characters/players/curundil.png";
 import dm from "../../../public/images/characters/players/the-dm.png";
 
 const PlayersSection = ({ setShowImageModal, setModalImageSrc }) => {
+  SwiperCore.use([Autoplay]);
+
   return (
     <section className="flex gap-2 flex-col-reverse md:flex-row">
       <div className="flex-1 text-lg leading-5">
@@ -50,8 +58,14 @@ const PlayersSection = ({ setShowImageModal, setModalImageSrc }) => {
           </li>
         </ul>
       </div>
-      <div className="relative flex-1 flex">
-        <div className="w-1/4">
+      <Swiper
+        slidesPerView={1}
+        loop
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        onSwiper={(swiper) => console.log(swiper)}
+        className={"w-1/2 h-44"}
+      >
+        <SwiperSlide className="flex justify-center">
           <Image
             src={xeor}
             alt={"Xeor"}
@@ -59,8 +73,10 @@ const PlayersSection = ({ setShowImageModal, setModalImageSrc }) => {
               setShowImageModal(true);
               setModalImageSrc(xeor);
             }}
-            className="cursor-pointer"
+            className="cursor-pointer h-full w-fit"
           />
+        </SwiperSlide>
+        <SwiperSlide className="flex justify-center">
           <Image
             src={cosmo}
             alt={"Cosmo"}
@@ -68,10 +84,10 @@ const PlayersSection = ({ setShowImageModal, setModalImageSrc }) => {
               setShowImageModal(true);
               setModalImageSrc(cosmo);
             }}
-            className="cursor-pointer"
+            className="cursor-pointer h-full w-fit"
           />
-        </div>
-        <div className="w-1/4">
+        </SwiperSlide>
+        <SwiperSlide className="flex justify-center">
           <Image
             src={daisy}
             alt={"Daisy"}
@@ -79,8 +95,10 @@ const PlayersSection = ({ setShowImageModal, setModalImageSrc }) => {
               setShowImageModal(true);
               setModalImageSrc(daisy);
             }}
-            className="cursor-pointer"
+            className="cursor-pointer h-full w-fit"
           />
+        </SwiperSlide>
+        <SwiperSlide className="flex justify-center">
           <Image
             src={curundil}
             alt={"Curundil"}
@@ -88,29 +106,32 @@ const PlayersSection = ({ setShowImageModal, setModalImageSrc }) => {
               setShowImageModal(true);
               setModalImageSrc(curundil);
             }}
-            className="cursor-pointer"
+            className="cursor-pointer h-full w-fit"
           />
-        </div>
-
-        <Image
-          src={dm}
-          alt={"Dylan schiet de fuck op met je char"}
-          onClick={(e) => {
-            setShowImageModal(true);
-            setModalImageSrc(dm);
-          }}
-          className="cursor-pointer w-1/4"
-        />
-        <Image
-          src={dm}
-          alt={"DM"}
-          onClick={(e) => {
-            setShowImageModal(true);
-            setModalImageSrc(dm);
-          }}
-          className="cursor-pointer w-1/4"
-        />
-      </div>
+        </SwiperSlide>
+        <SwiperSlide className="flex justify-center">
+          <Image
+            src={dm}
+            alt={"Dylan schiet de fuck op met je char"}
+            onClick={(e) => {
+              setShowImageModal(true);
+              setModalImageSrc(dm);
+            }}
+            className="cursor-pointer h-full w-fit"
+          />
+        </SwiperSlide>
+        <SwiperSlide className="flex justify-center">
+          <Image
+            src={dm}
+            alt={"DM"}
+            onClick={(e) => {
+              setShowImageModal(true);
+              setModalImageSrc(dm);
+            }}
+            className="cursor-pointer h-full w-fit"
+          />
+        </SwiperSlide>
+      </Swiper>
     </section>
   );
 };
