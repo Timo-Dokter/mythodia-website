@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import xeor from "../../../public/images/characters/players/xeor.png";
 import daisy from "../../../public/images/characters/players/daisy.png";
+import cosmo from "../../../public/images/characters/players/cosmo.png";
 import curundil from "../../../public/images/characters/players/curundil.png";
 import dm from "../../../public/images/characters/players/the-dm.png";
 
@@ -61,11 +62,11 @@ const PlayersSection = ({ setShowImageModal, setModalImageSrc }) => {
             className="cursor-pointer"
           />
           <Image
-            src={xeor}
+            src={cosmo}
             alt={"Cosmo"}
             onClick={(e) => {
               setShowImageModal(true);
-              setModalImageSrc(xeor);
+              setModalImageSrc(cosmo);
             }}
             className="cursor-pointer"
           />
