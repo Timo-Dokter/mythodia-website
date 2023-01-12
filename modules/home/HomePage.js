@@ -1,12 +1,6 @@
-import Image from "next/image";
-
 import WorldSection from "./components/WorldSection";
 import PlayersSection from "./components/PlayersSection";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import * as icons from "@fortawesome/free-solid-svg-icons";
-
-import mythodiaMap from "../../public/images/mythodia-map.png";
+import LinkSection from "./components/LinksSection";
 
 const HomePage = ({ setShowImageModal, setModalImageSrc }) => {
   return (
@@ -21,6 +15,7 @@ const HomePage = ({ setShowImageModal, setModalImageSrc }) => {
           setModalImageSrc={setModalImageSrc}
           setShowImageModal={setShowImageModal}
         />
+        <LinkSection />
       </div>
     </>
   );
