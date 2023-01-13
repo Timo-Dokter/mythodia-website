@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import io from "Socket.IO-client";
+import io from "socket.io-client";
 
 const GamePage = () => {
   const [socket, setSocket] = useState({});
