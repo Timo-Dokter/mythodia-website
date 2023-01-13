@@ -17,53 +17,12 @@ const PlayersSection = ({ setShowImageModal, setModalImageSrc }) => {
 
   return (
     <section className="flex gap-2 flex-col-reverse md:flex-row">
-      <div className="flex-1 text-lg leading-5">
-        The campaign is played by the following characters:
-        <ul className="list-disc list-inside">
-          <li>
-            <a href="/players/xeor" className="underline font-bold">
-              Xeor Thundershadow
-            </a>
-            , The Leonin ranger - Drakewarden
-          </li>
-          <li>
-            <a href="/players/cosmo" className="underline font-bold">
-              Cosmo Julius Cosma
-            </a>
-            , The Fairy sorcerer - Lunar magic
-          </li>
-          <li>
-            <a href="/players/daisy" className="underline font-bold">
-              Daisy Peony Mullien Hawthorn
-            </a>
-            , The Fairy ranger - Beastmaster
-          </li>
-          <li>
-            <a href="/players/morleg" className="underline font-bold">
-              Curundil M. Lómion
-            </a>
-            , The Elven bard - College of Eloquence
-          </li>
-          <li>
-            <a href="/players/dylan" className="underline font-bold">
-              Dylan je hebt tot 21 januari!
-            </a>
-            , The Loxodon monk - sub-class niet bekend
-          </li>
-          <li>
-            <a href="/players/dm" className="underline font-bold">
-              DM
-            </a>
-            , The dungeon master - Master of planes
-          </li>
-        </ul>
-      </div>
       <Swiper
         slidesPerView={1}
         loop
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         // onSwiper={(swiper) => console.log(swiper)}
-        className={"w-1/2 h-44"}
+        className={"w-full md:w-1/4 h-44"}
       >
         <SwiperSlide className="flex justify-center">
           <Image
@@ -132,6 +91,47 @@ const PlayersSection = ({ setShowImageModal, setModalImageSrc }) => {
           />
         </SwiperSlide>
       </Swiper>
+      <div className="flex-1 text-lg leading-5">
+        The campaign is played by the following characters:
+        <ul className="flex flex-col gap-1 list-disc list-inside">
+          <li>
+            <a href="/players/xeor" className="underline font-bold">
+              Xeor Thundershadow
+            </a>
+            , The Leonin ranger - Drakewarden
+          </li>
+          <li>
+            <a href="/players/cosmo" className="underline font-bold">
+              Cosmo Julius Cosma
+            </a>
+            , The Fairy sorcerer - Lunar magic
+          </li>
+          <li>
+            <a href="/players/daisy" className="underline font-bold">
+              Daisy Peony Mullien Hawthorn
+            </a>
+            , The Fairy ranger - Beastmaster
+          </li>
+          <li>
+            <a href="/players/morleg" className="underline font-bold">
+              Curundil M. Lómion
+            </a>
+            , The Elven bard - College of Eloquence
+          </li>
+          <li>
+            <a href="/players/dylan" className="underline font-bold">
+              Dylan je hebt tot 21 januari!
+            </a>
+            , The Loxodon monk - sub-class niet bekend
+          </li>
+          <li>
+            <a href="/players/dm" className="underline font-bold">
+              DM
+            </a>
+            , The dungeon master - Master of planes
+          </li>
+        </ul>
+      </div>
     </section>
   );
 };

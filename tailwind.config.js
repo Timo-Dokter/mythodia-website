@@ -13,6 +13,7 @@ module.exports = {
         "light-parchment": "#FFFCF2",
         parchment: "#F4D2A2",
         "dark-parchment": "#EAC18B",
+        "light-brown": "#8C6747",
       },
       minHeight: {
         120: " 30rem",
