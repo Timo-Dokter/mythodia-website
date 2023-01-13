@@ -9,7 +9,7 @@ import ImageModal from "../modules/common/ui/ImageModal";
 
 config.autoAddCss = false;
 
-function MyApp({ Component, pageProps }) {
+function Mythodia({ Component, pageProps }) {
   const [showImageModal, setShowImageModal] = useState(false);
   const [modalImageSrc, setModalImageSrc] = useState("");
 
@@ -32,4 +32,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+export default Mythodia;

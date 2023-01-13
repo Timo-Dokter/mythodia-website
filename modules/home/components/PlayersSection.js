@@ -62,7 +62,7 @@ const PlayersSection = ({ setShowImageModal, setModalImageSrc }) => {
         slidesPerView={1}
         loop
         autoplay={{ delay: 3000, disableOnInteraction: false }}
-        onSwiper={(swiper) => console.log(swiper)}
+        // onSwiper={(swiper) => console.log(swiper)}
         className={"w-1/2 h-44"}
       >
         <SwiperSlide className="flex justify-center">
