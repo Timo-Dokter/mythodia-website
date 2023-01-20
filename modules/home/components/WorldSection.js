@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import mythodiaMap from "../../../public/images/mythodia-map.png";
+import mythodiaMap from "../../../public/images/mythodia-map.jpeg";
 
 const WorldSection = ({ setShowImageModal, setModalImageSrc }) => {
   return (
@@ -13,18 +13,16 @@ const WorldSection = ({ setShowImageModal, setModalImageSrc }) => {
         rule the states, but they are trusted by everyone in their respective
         state. The rulers of the states come to the dragons for advice and aid
         when necessary. */}
-        In Mythodia, dragons are not just protectors, but also revered creatures
-        with great wisdom and power. They are believed to have been created by
-        the gods to maintain balance and order in the world. Each dragon has its
-        own unique abilities and characteristics, making them valuable allies
-        and formidable enemies. The dragons are also responsible for maintaining
-        the natural balance in their respective states, ensuring that the
-        environment and creatures within it thrive. They are deeply connected to
-        the land and can sense any disturbances in the balance. The dragons are
-        also immortal, and it is believed that they will continue to protect and
-        guide their states even after the rulers have long passed. This creates
-        a deep sense of respect and reverence for the dragons among the people
-        of Mythodia.
+        The world of Mythodia, which I created for a campaign with my friends,
+        is a place where dragons hold a special place of honor. Each state in
+        Mythodia has its own dragon protector, who is known and feared by those
+        who should.
+        <br />
+        <br />
+        These dragons do not hold ultimate authority over the states, but they
+        are respected and relied upon by the rulers and citizens alike. They are
+        often consulted for advice and aid in times of need, making them an
+        integral part of the political and social landscape of Mythodia.
       </p>
       <div className="relative flex-1">
         <Image

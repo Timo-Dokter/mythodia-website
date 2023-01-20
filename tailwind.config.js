@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "mythodia-map": "url(/images/mythodia-map.png)",
+        "mythodia-map": "url(/images/mythodia-map.jpeg)",
         "the-inner-planes-map": "url(/images/the-inner-planes.png)",
       },
       colors: {
