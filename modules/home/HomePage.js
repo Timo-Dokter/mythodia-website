@@ -5,7 +5,6 @@ import LinkSection from "./components/LinksSection";
 const HomePage = ({ setShowImageModal, setModalImageSrc }) => {
   return (
     <>
-      menu bar drop down maken
       <h1 className="text-3xl md:text-4xl font-medium mb-2">
         The universe of Mythodia
       </h1>
