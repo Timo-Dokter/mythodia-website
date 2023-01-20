@@ -46,6 +46,14 @@ const BaseHeader = () => {
         >
           World
         </Link>
+        {/* <Link
+          href={"game"}
+          className="flex items-center text-xl font-semibold px-2 text-white hover:bg-parchment hover:text-black transition-all"
+          passHref
+          target={"_blank"}
+        >
+          Game
+        </Link> */}
       </nav>
     </header>
   );

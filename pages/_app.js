@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
@@ -9,15 +10,26 @@ import ImageModal from "../modules/common/ui/ImageModal";
 
 config.autoAddCss = false;
 
-function Mythodia({ Component, pageProps }) {
+const Mythodia = ({ Component, pageProps }) => {
+  const [role, setRole] = useState("");
   const [showImageModal, setShowImageModal] = useState(false);
   const [modalImageSrc, setModalImageSrc] = useState("");
 
+  const router = useRouter();
+
   const Layout = Component.Layout || BaseLayout;
+
+  const selectRole = (e, role) => {
+    setRole(role);
+    e.preventDefault();
+    router.push("/game");
+  };
 
   return (
     <Layout>
       <Component
+        selectRole={selectRole}
+        role={role}
         setShowImageModal={setShowImageModal}
         setModalImageSrc={setModalImageSrc}
         {...pageProps}
@@ -30,6 +42,6 @@ function Mythodia({ Component, pageProps }) {
       )}
     </Layout>
   );
-}
+};
 
 export default Mythodia;
