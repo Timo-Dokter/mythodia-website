@@ -5,8 +5,8 @@ import { useRouter } from "next/router";
 
 const Chat = ({ sender }) => {
   const router = useRouter();
-  const pusher = new Pusher(process.env.NEXT_PUBLIC_KEY, {
-    cluster: "eu",
+  const pusher = new Pusher(process.env.PUSHER_PUBLIC_KEY, {
+    cluster: process.env.PUSHER_CLUSTER,
   });
 
   const [chats, setChats] = useState([]);
