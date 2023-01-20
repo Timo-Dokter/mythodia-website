@@ -23,7 +23,7 @@ const BaseHeader = () => {
           </h1>
         </Link>
 
-        <div class="z-20 md:hidden">
+        <div className="z-20 md:hidden">
           <div
             className={`flex flex-col gap-y-1 top-0 right-0 w-full h-full bg-dark-parchment p-2 pt-16 text-white fixed  ease-in-out duration-300 ${
               mobileMenuOpen ? "translate-x-0 " : "translate-x-full"
