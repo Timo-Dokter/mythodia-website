@@ -44,19 +44,19 @@ const LoginModal = ({ show, setShow, selectRole }) => {
                     <div className="mt-3 text-center sm:mt-0 sm:text-left">
                       <Dialog.Title
                         as="h3"
-                        className="text-lg font-medium leading-6 text-gray-900"
+                        className="text-lg font-medium leading-6 text-black"
                       >
                         Enter DM password
                       </Dialog.Title>
                       <div className="mt-2">
-                        <p className="text-sm text-gray-500">
+                        <p className="text-sm text-gray-800">
                           To make sure you are the DM please fill in your
                           password.
                         </p>
                         <div>
                           <label
                             htmlFor="dm_password"
-                            className="block mb-2 text-sm font-medium text-gray-900"
+                            className="block mb-2 text-sm font-medium text-black"
                           >
                             DM password:
                           </label>
@@ -75,7 +75,7 @@ const LoginModal = ({ show, setShow, selectRole }) => {
                 <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
                   <button
                     type="button"
-                    className="inline-flex w-full justify-center rounded-md border border-transparent bg-green-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 sm:ml-3 sm:w-auto sm:text-sm"
+                    className="inline-flex w-full justify-center rounded-md border border-transparent bg-dark-parchment px-4 py-2 text-base font-medium text-blakc shadow-sm hover:bg-light-brown hover:text-white focus:outline-none focus:ring-2 focus:ring-stone-500 focus:ring-offset-2 sm:ml-3 sm:w-auto sm:text-sm"
                     onClick={(e) => {
                       const res = axios
                         .post("/api/check-dm-password", {

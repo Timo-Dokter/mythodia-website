@@ -10,7 +10,7 @@ const BaseHeader = () => {
 
   return (
     <header className="bg-dark-parchment">
-      <nav className="flex flex-row justify-between items-center px-2">
+      <nav className="flex flex-row justify-between items-stretch px-2">
         <Link href={"/"} className="flex relative justify-start z-30">
           <Image
             src="/images/DnD-Symbol.png"
@@ -67,13 +67,13 @@ const BaseHeader = () => {
 
         <div className="hidden md:flex">
           {/* <Link
-          href={"game"}
-          className="flex items-center text-xl font-semibold px-2 text-white hover:bg-parchment hover:text-black transition-all"
-          passHref
-          target={"_blank"}
-        >
-          Game
-        </Link> */}
+            href={"game"}
+            className="flex items-center text-xl font-semibold px-2 text-white hover:bg-parchment hover:text-black transition-all"
+            passHref
+            target={"_blank"}
+          >
+            Game
+          </Link> */}
 
           <Link
             href={"/"}
