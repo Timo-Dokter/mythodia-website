@@ -1,0 +1,17 @@
+[
+  {
+    "description": { "appearance": "Green blob", "origin": "City" },
+    "name": "Template",
+    "notable-items": {
+      "current": ["current item"],
+      "former": ["former item"]
+    },
+    "relationships": [
+      {
+        "name": "Creature name",
+        "description": "Creature name and tempate met at..."
+      }
+    ],
+    "route": "/players/template"
+  }
+]

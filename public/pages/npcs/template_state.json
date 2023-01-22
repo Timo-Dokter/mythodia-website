@@ -1,0 +1,36 @@
+{
+  "template_town": [
+    {
+      "description": { "appearance": "Green blob", "origin": "City" },
+      "name": "template_name",
+      "notable-items": {
+        "current": ["current item"],
+        "former": ["former item"]
+      },
+      "relationships": [
+        {
+          "name": "Creature name",
+          "description": "Creature name and tempate met at..."
+        }
+      ],
+      "route": "/npcs/template_state/template_city/template_name"
+    }
+  ],
+  "template_town_2": [
+    {
+      "description": { "appearance": "Green blob", "origin": "City" },
+      "name": "template_name",
+      "notable-items": {
+        "current": ["current item"],
+        "former": ["former item"]
+      },
+      "relationships": [
+        {
+          "name": "Creature name",
+          "description": "Creature name and tempate met at..."
+        }
+      ],
+      "route": "/npcs/template_state/template_city/template_name"
+    }
+  ]
+}
