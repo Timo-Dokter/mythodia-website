@@ -22,7 +22,7 @@ const Post = () => {
     }
   }, [router.query]);
 
-  return <p>{...npcInfo}</p>;
+  return <p>{npcInfo}</p>;
 };
 
 export default Post;
