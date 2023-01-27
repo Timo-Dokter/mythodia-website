@@ -20,7 +20,9 @@
       "name": "Broshk",
       "route": "/npcs/ancalagonian_kingdom/vabadpulads/broshk",
       "look-up_name": "broshk"
-    },
+    }
+  ],
+  "chasan": [
     {
       "name": "Justine Shia",
       "route": "/npcs/ancalagonian_kingdom/vabadpulads/justine_shia",

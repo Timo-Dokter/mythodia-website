@@ -7,6 +7,11 @@ import { useState, useEffect } from "react";
 
 import stringToTitle from "../../utils/stringToTitle";
 
+import { NpcLinks } from "./components/npcLinks";
+import { NpcsByLetterSection } from "./components/NpcsByLetterSection";
+import { TownSection } from "./components/TownSection";
+import { StatesSection } from "./components/StatesSection";
+
 const NpcsPage = (props) => {
   const [npcData, setNpcData] = useState([]);
 
@@ -18,44 +23,15 @@ const NpcsPage = (props) => {
     <>
       <h1 className="text-5xl">Non-player characters</h1>
       <div className="flex flex-col divide-y-4 divide-parchment gap-4">
-        {Object.entries(npcData)
+        <StatesSection npcData={Object.entries(npcData)} />
+        {/* {Object.entries(npcData)
           .sort((a, b) => (a[0] > b[0] ? 1 : b[0] > a[0] ? -1 : 0))
           .map(([state, towns]) => (
             <div key={state}>
               <h3 className="text-3xl">{stringToTitle(state)}</h3>
-              <div className="flex flex-col divide-y-2 divide-parchment">
-                {Object.entries(towns).map(([town, npcsByLetter]) => (
-                  <div key={town}>
-                    <h3 className="text-2xl">{stringToTitle(town)}</h3>
-                    <div className="columns-3">
-                      {Object.entries(npcsByLetter).map(
-                        ([firstLetter, npcs]) => (
-                          <section
-                            className="flex flex-col mb-2"
-                            key={firstLetter}
-                          >
-                            <h4 className="text-xl">{firstLetter}</h4>
-                            <ul className="list-inside list-disc">
-                              {npcs.map((npc) => (
-                                <li key={npc.name}>
-                                  <Link
-                                    href={npc.route}
-                                    className="truncate text-blue-600"
-                                  >
-                                    {npc.name}
-                                  </Link>
-                                </li>
-                              ))}
-                            </ul>
-                          </section>
-                        )
-                      )}
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <TownSection towns={Object.entries(towns)} state={state} />
             </div>
-          ))}
+          ))} */}
       </div>
     </>
   );
