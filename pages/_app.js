@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
 
+import Head from "next/head";
+
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "../styles/globals.css";
@@ -26,21 +28,26 @@ const Mythodia = ({ Component, pageProps }) => {
   };
 
   return (
-    <Layout>
-      <Component
-        selectRole={selectRole}
-        role={role}
-        setShowImageModal={setShowImageModal}
-        setModalImageSrc={setModalImageSrc}
-        {...pageProps}
-      />
-      {showImageModal && (
-        <ImageModal
+    <>
+      <Head>
+        <title>Mythodia</title>
+      </Head>
+      <Layout>
+        <Component
+          selectRole={selectRole}
+          role={role}
           setShowImageModal={setShowImageModal}
-          modalImageSrc={modalImageSrc}
+          setModalImageSrc={setModalImageSrc}
+          {...pageProps}
         />
-      )}
-    </Layout>
+        {showImageModal && (
+          <ImageModal
+            setShowImageModal={setShowImageModal}
+            modalImageSrc={modalImageSrc}
+          />
+        )}
+      </Layout>
+    </>
   );
 };
 

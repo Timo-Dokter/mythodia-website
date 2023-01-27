@@ -71,17 +71,6 @@ const PlayersSection = ({ setShowImageModal, setModalImageSrc }) => {
         <SwiperSlide className="flex justify-center">
           <Image
             src={dm}
-            alt={"Dylan schiet de fuck op met je char"}
-            onClick={(e) => {
-              setShowImageModal(true);
-              setModalImageSrc(dm);
-            }}
-            className="cursor-pointer h-full w-fit"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="flex justify-center">
-          <Image
-            src={dm}
             alt={"DM"}
             onClick={(e) => {
               setShowImageModal(true);
@@ -117,12 +106,6 @@ const PlayersSection = ({ setShowImageModal, setModalImageSrc }) => {
               Curundil M. Lómion
             </a>
             , The Elven bard - College of Eloquence
-          </li>
-          <li>
-            <a href="/players/dylan" className="underline font-bold">
-              Dylan je hebt tot 21 januari!
-            </a>
-            , The Loxodon monk - sub-class niet bekend
           </li>
           <li>
             <a href="/players/dm" className="underline font-bold">

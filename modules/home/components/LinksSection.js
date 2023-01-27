@@ -18,7 +18,7 @@ const LinkSection = () => {
       </div>
       <div className="text-center mb-4 md:w-1/5">
         <Link
-          href={"/players/"}
+          href={"/npcs/"}
           className="block px-3 py-2 bg-dark-parchment w-fit mb-1 m-auto rounded-md text-black font-bold shadow hover:bg-light-brown hover:text-white transition-all"
         >
           <FontAwesomeIcon icon={icons.faUsers} className={"pr-2"} />
@@ -29,7 +29,7 @@ const LinkSection = () => {
       </div>
       <div className="text-center mb-4 md:w-1/5">
         <Link
-          href={"/players/"}
+          href={"/items/"}
           className="block px-3 py-2 bg-dark-parchment w-fit mb-1 m-auto rounded-md text-black font-bold shadow hover:bg-light-brown hover:text-white transition-all"
         >
           <FontAwesomeIcon icon={icons.faUser} className={"pr-2"} />
@@ -39,7 +39,7 @@ const LinkSection = () => {
       </div>
       <div className="text-center mb-4 md:w-1/5">
         <Link
-          href={"/players/"}
+          href={"/world/"}
           className="block px-3 py-2 bg-dark-parchment w-fit mb-1 m-auto rounded-md text-black font-bold shadow hover:bg-light-brown hover:text-white transition-all"
         >
           <FontAwesomeIcon icon={icons.faGlobe} className={"pr-2"} />
