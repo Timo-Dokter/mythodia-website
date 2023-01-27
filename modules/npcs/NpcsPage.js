@@ -1,15 +1,8 @@
 import fs from "fs";
 import path from "path";
 
-import Link from "next/link";
-
 import { useState, useEffect } from "react";
 
-import stringToTitle from "../../utils/stringToTitle";
-
-import { NpcLinks } from "./components/npcLinks";
-import { NpcsByLetterSection } from "./components/NpcsByLetterSection";
-import { TownSection } from "./components/TownSection";
 import { StatesSection } from "./components/StatesSection";
 
 const NpcsPage = (props) => {
@@ -24,14 +17,6 @@ const NpcsPage = (props) => {
       <h1 className="text-5xl">Non-player characters</h1>
       <div className="flex flex-col divide-y-4 divide-parchment gap-4">
         <StatesSection npcData={Object.entries(npcData)} />
-        {/* {Object.entries(npcData)
-          .sort((a, b) => (a[0] > b[0] ? 1 : b[0] > a[0] ? -1 : 0))
-          .map(([state, towns]) => (
-            <div key={state}>
-              <h3 className="text-3xl">{stringToTitle(state)}</h3>
-              <TownSection towns={Object.entries(towns)} state={state} />
-            </div>
-          ))} */}
       </div>
     </>
   );
