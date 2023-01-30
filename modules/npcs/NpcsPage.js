@@ -13,12 +13,12 @@ const NpcsPage = (props) => {
   }, [props.npcData]);
 
   return (
-    <>
-      <h1 className="text-5xl">Non-player characters</h1>
-      <div className="flex flex-col divide-y-4 divide-parchment gap-4">
+    <div className="flex flex-col divide-y-4 divide-parchment gap-2">
+      <section className="text-4xl">Non-player characters</section>
+      <section className="flex flex-col divide-y-4 divide-parchment gap-4">
         <StatesSection npcData={Object.entries(npcData)} />
-      </div>
-    </>
+      </section>
+    </div>
   );
 };
 
