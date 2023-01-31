@@ -18,7 +18,7 @@
   ],
   "vabadpulads": [
     {
-      "age": "Mid 50s",
+      "age": "Early 50s",
       "also_known_as": [
         "Chieftain of Vabadpulads",
         "Voice of the Dragon Elders"
@@ -51,16 +51,17 @@
         }
       ],
       "route": "/npcs/ancalagonian_kingdom/vabadpulads/thak",
+      "short_description": "Thak is a lizardfolk in his early 50s and serves as the chieftain of the Vabadpulads tribe. He is also the representative of the dragon court of elders, making him a powerful figure in his community. Thak's position as both chieftain and dragon court representative likely speaks to his leadership abilities and strong ties with both his tribe and the dragons.",
       "stats": {
-        "ac": "1",
-        "cha": "1",
-        "con": "1",
-        "dex": "1",
-        "hp": "1",
-        "int": "1",
-        "speed": "5ft",
-        "str": "1",
-        "wis": "1"
+        "ac": "?",
+        "cha": "?",
+        "con": "?",
+        "dex": "?",
+        "hp": "?",
+        "int": "?",
+        "speed": "?ft",
+        "str": "?",
+        "wis": "?"
       },
       "status": "Alive",
       "type": "NPC"
