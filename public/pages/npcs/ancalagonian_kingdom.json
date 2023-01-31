@@ -1,42 +1,74 @@
 {
+  "chasan": [
+    {
+      "look-up_name": "justine_shia",
+      "name": "Justine Shia",
+      "route": "/npcs/ancalagonian_kingdom/vabadpulads/justine_shia"
+    },
+    {
+      "look-up_name": "sandro_shia",
+      "name": "Sandro Shia",
+      "route": "/npcs/ancalagonian_kingdom/vabadpulads/sandro_shia"
+    },
+    {
+      "look-up_name": "tua_shia",
+      "name": "Tua Shia",
+      "route": "/npcs/ancalagonian_kingdom/vabadpulads/tua_shia"
+    }
+  ],
   "vabadpulads": [
     {
-      "description": { "appearance": "Green blob", "origin": "City" },
+      "age": "Mid 50s",
+      "also_known_as": [
+        "Chieftain of Vabadpulads",
+        "Voice of the Dragon Elders"
+      ],
+      "creature_type": "Humanoid",
+      "description": {
+        "appearance": "Green blob",
+        "origin": "City"
+      },
+      "family": [
+        {
+          "name": "Broshk (son)",
+          "route": "/npcs/ancalagonian_kingdom/vabadpulads/broshk"
+        }
+      ],
+      "image": "/images/npcs/ancalagonian_kingdom/vabadpulads/thak.png",
+      "languages": ["Common", "Draconic", "Primordial"],
+      "look-up_name": "thak",
       "name": "Thak",
       "notable-items": {
         "current": ["current item"],
         "former": ["former item"]
       },
+      "place": "Vabadpulads",
+      "race": "Lizardfolk",
       "relationships": [
         {
-          "name": "Creature name",
-          "description": "Creature name and tempate met at..."
+          "description": "Creature name and tempate met at...",
+          "name": "Creature name"
         }
       ],
       "route": "/npcs/ancalagonian_kingdom/vabadpulads/thak",
-      "look-up_name": "thak"
+      "stats": {
+        "ac": "1",
+        "cha": "1",
+        "con": "1",
+        "dex": "1",
+        "hp": "1",
+        "int": "1",
+        "speed": "5ft",
+        "str": "1",
+        "wis": "1"
+      },
+      "status": "Alive",
+      "type": "NPC"
     },
     {
+      "look-up_name": "broshk",
       "name": "Broshk",
-      "route": "/npcs/ancalagonian_kingdom/vabadpulads/broshk",
-      "look-up_name": "broshk"
-    }
-  ],
-  "chasan": [
-    {
-      "name": "Justine Shia",
-      "route": "/npcs/ancalagonian_kingdom/vabadpulads/justine_shia",
-      "look-up_name": "justine_shia"
-    },
-    {
-      "name": "Sandro Shia",
-      "route": "/npcs/ancalagonian_kingdom/vabadpulads/sandro_shia",
-      "look-up_name": "sandro_shia"
-    },
-    {
-      "name": "Tua Shia",
-      "route": "/npcs/ancalagonian_kingdom/vabadpulads/tua_shia",
-      "look-up_name": "tua_shia"
+      "route": "/npcs/ancalagonian_kingdom/vabadpulads/broshk"
     }
   ]
 }

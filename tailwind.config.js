@@ -15,12 +15,19 @@ module.exports = {
         "dark-parchment": "#EAC18B",
         "light-brown": "#8C6747",
       },
+      lineHeight: { normal: "normal" },
       minHeight: {
-        120: " 30rem",
+        120: "30rem",
       },
       spacing: {
+        25.5: "6.375rem",
         128: "32rem",
+        184: "46rem",
         192: "48rem",
+      },
+      zIndex: {
+        8: "8",
+        9: "9",
       },
     },
   },

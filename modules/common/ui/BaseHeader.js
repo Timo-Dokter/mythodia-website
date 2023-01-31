@@ -11,7 +11,7 @@ const BaseHeader = () => {
   return (
     <header className="bg-dark-parchment">
       <nav className="flex flex-row justify-between items-stretch px-2">
-        <Link href={"/"} className="flex relative justify-start z-30">
+        <Link href={"/"} className="flex relative justify-start z-9">
           <Image
             src="/images/DnD-Symbol.png"
             alt="dnd symbol"
@@ -23,7 +23,7 @@ const BaseHeader = () => {
           </h1>
         </Link>
 
-        <div className="z-20 md:hidden">
+        <div className="z-8 md:hidden">
           <div
             className={`flex flex-col gap-y-1 top-0 right-0 w-full h-full bg-dark-parchment p-2 pt-16 text-white fixed  ease-in-out duration-300 ${
               mobileMenuOpen ? "translate-x-0 " : "translate-x-full"

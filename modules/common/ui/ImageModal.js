@@ -20,15 +20,21 @@ const ImageModal = ({ showImageModal, setShowImageModal, modalImageSrc }) => {
     >
       <div className="fixed inset-0 z-10 overflow-y-auto">
         <div className="flex min-h-full items-center justify-center p-4 text-center bg-gray-600 bg-opacity-70 sm:items-center sm:p-0">
-          <div className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:max-w-7xl sm:max-h-192">
+          <div className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8">
             <div className="bg-white px-4 py-4">
-              <div className="text-center sm:mt-0 sm:text-left">
+              {typeof modalImageSrc == "object" ? (
                 <Image
                   src={modalImageSrc}
                   alt="img on modal"
-                  className="h-full"
+                  className="sm:max-h-184 sm:max-w-7xl"
                 />
-              </div>
+              ) : (
+                <img
+                  src={modalImageSrc}
+                  alt="img on modal"
+                  className="sm:max-h-184 sm:max-w-7xl"
+                />
+              )}
             </div>
           </div>
         </div>
