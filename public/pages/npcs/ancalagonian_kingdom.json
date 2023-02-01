@@ -81,7 +81,7 @@
             "route": "/npcs/ancalagonian_kingdom/vabadpulads/broshk"
           }
         ],
-        "image": "/images/npcs/ancalagonian_kingdom/vabadpulads/thak.png",
+        "image": "/images/characters/npcs/ancalagonian_kingdom/vabadpulads/thak.png",
         "languages": ["Common", "Draconic", "Primordial"],
         "place": "Vabadpulads",
         "race": "Lizardfolk",
