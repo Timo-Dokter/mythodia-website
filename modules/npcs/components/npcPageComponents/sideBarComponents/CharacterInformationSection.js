@@ -2,39 +2,45 @@ import SideBarItem from "./SideBarItem";
 import SideBarListItem from "./SideBarListItem";
 import SideBarLinkListItem from "./SideBarLinkListItem";
 
-const CharacterInformationSection = ({ npc }) => {
+const CharacterInformationSection = ({ charInfo }) => {
   return (
     <section className="flex flex-col divide-y divide-parchment">
       <div className="px-2 py-3 text-center text-xl font-bold bg-dark-parchment break-words">
         Character information
       </div>
       {/* Name */}
-      <SideBarItem label={"Name"} value={npc.name} />
+      <SideBarItem label={"Name"} value={charInfo.name} />
       {/* Also known as */}
-      {npc.also_known_as && (
-        <SideBarListItem label="Also known as" values={npc.also_known_as} />
+      {charInfo.also_known_as && (
+        <SideBarListItem
+          label="Also known as"
+          values={charInfo.also_known_as}
+        />
       )}
       {/* Creature type */}
-      {npc.creature_type && (
-        <SideBarItem label={"Creature type"} value={npc.creature_type} />
+      {charInfo.creature_type && (
+        <SideBarItem label={"Creature type"} value={charInfo.creature_type} />
       )}
       {/* Race */}
-      {npc.race && <SideBarItem label={"Race"} value={npc.race} />}
+      {charInfo.race && <SideBarItem label={"Race"} value={charInfo.race} />}
       {/* Age */}
-      {npc.age && <SideBarItem label={"Age"} value={npc.age} />}
+      {charInfo.age && <SideBarItem label={"Age"} value={charInfo.age} />}
       {/* Languages */}
-      {npc.languages && (
-        <SideBarListItem label={"Languages"} values={npc.languages} />
+      {charInfo.languages && (
+        <SideBarListItem label={"Languages"} values={charInfo.languages} />
       )}
       {/* Places */}
-      {npc.place && <SideBarItem label={"Place"} value={npc.place} />}
+      {charInfo.place && <SideBarItem label={"Place"} value={charInfo.place} />}
       {/* Family */}
-      {npc.family && (
-        <SideBarLinkListItem label={"Family"} values={npc.family} />
+      {charInfo.family && (
+        <SideBarLinkListItem label={"Family"} values={charInfo.family} />
       )}
       {/* Connections */}
-      {npc.connections && (
-        <SideBarLinkListItem label={"Connections"} values={npc.connections} />
+      {charInfo.connections && (
+        <SideBarLinkListItem
+          label={"Connections"}
+          values={charInfo.connections}
+        />
       )}
     </section>
   );

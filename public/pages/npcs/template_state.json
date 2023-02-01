@@ -1,36 +1,82 @@
 {
   "template_town": [
     {
-      "description": { "appearance": "Green blob", "origin": "City" },
-      "name": "template_name",
-      "notable-items": {
-        "current": ["current item"],
-        "former": ["former item"]
+      "class": "Class",
+      "sub_class": "Sub class",
+      "character_info": {
+        "abilities": {
+          "class_features": ["class feature"],
+          "spells": {
+            "cantrip": ["cantrip spell"],
+            "first_level": ["first level spell"],
+            "second_level": ["second level spell"],
+            "third_level": ["third level spell"],
+            "fourth_level": ["fourth level spell"],
+            "fifth_level": ["fifth level spell"],
+            "sixth_level": ["sixth level spell"],
+            "seventh_level": ["seventh level spell"],
+            "eigth_level": ["eigth level spell"],
+            "ninth_level": ["ninth level spell"]
+          },
+          "sub_class_features": ["sub class features"]
+        },
+        "notable_items": {
+          "current": [
+            "current item",
+            {
+              "name": "Armblade",
+              "route": "http://dnd5e.wikidot.com/wondrous-items:armblade"
+            }
+          ],
+          "former": ["former item"]
+        }
       },
+      "description": {
+        "appearance": ["description of how the character looks"],
+        "personality": ["description of the personality of the npc"]
+      },
+      "look-up_name": "name",
+      "name": "name",
       "relationships": [
         {
-          "name": "Creature name",
-          "description": "Creature name and tempate met at..."
+          "description": [
+            "Description on the relationship between the characters"
+          ],
+          "name": "relationship name",
+          "route": "/npcs/template_state/template_town/name"
         }
       ],
-      "route": "/npcs/template_state/template_city/template_name"
-    }
-  ],
-  "template_town_2": [
-    {
-      "description": { "appearance": "Green blob", "origin": "City" },
-      "name": "template_name",
-      "notable-items": {
-        "current": ["current item"],
-        "former": ["former item"]
-      },
-      "relationships": [
-        {
-          "name": "Creature name",
-          "description": "Creature name and tempate met at..."
-        }
-      ],
-      "route": "/npcs/template_state/template_city/template_name"
+      "route": "/npcs/template_state/template_town/name",
+      "short_description": "Short the description on the character",
+      "side_bar_character_info": {
+        "age": "Early/mid/late 20s",
+        "also_known_as": ["King of templates"],
+        "class": "class (sub-class)",
+        "creature_type": "Humanoid",
+        "family": [
+          {
+            "name": "person",
+            "route": "/npcs/template_state/template_town/name"
+          }
+        ],
+        "image": "/images/characters/players/the-dm.png",
+        "languages": ["Language"],
+        "place": "town",
+        "race": "race",
+        "stats": {
+          "ac": "?",
+          "cha": "?",
+          "con": "?",
+          "dex": "?",
+          "hp": "?",
+          "int": "?",
+          "speed": "?ft",
+          "str": "?",
+          "wis": "?"
+        },
+        "status": "Alive",
+        "type": "character type"
+      }
     }
   ]
 }

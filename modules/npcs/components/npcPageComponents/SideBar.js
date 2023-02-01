@@ -3,33 +3,33 @@ import SideBarItem from "./sideBarComponents/SideBarItem";
 import StatsSection from "./sideBarComponents/StatsSection";
 import StatusSection from "./sideBarComponents/StatusSection";
 
-const SideBar = ({ npc }) => {
+const SideBar = ({ charInfo, name, setShowImageModal, setModalImageSrc }) => {
   return (
-    <aside className="flex flex-col border border-parchment divide-y divide-parchment float-right w-full max-w-xs bg-white">
+    <aside className="flex flex-col border border-parchment divide-y divide-parchment float-right w-full max-w-xs bg-white ml-4">
       <div className="px-2 py-3 text-center text-xl font-bold bg-dark-parchment break-words">
-        {npc.name}
+        {name}
       </div>
-      {npc.image && (
+      {charInfo.image && (
         <div>
           <img
-            src={npc.image}
+            src={charInfo.image}
             alt="npc-image"
             onClick={(e) => {
               setShowImageModal(true);
-              setModalImageSrc(npc.image);
+              setModalImageSrc(charInfo.image);
             }}
             className="cursor-pointer object-contain w-fit"
           />
         </div>
       )}
       {/* Type section */}
-      {npc.type && <SideBarItem label={"Type"} value={npc.type} />}
+      {charInfo.type && <SideBarItem label={"Type"} value={charInfo.type} />}
       {/* Character info section */}
-      <CharacterInformationSection npc={npc} />
+      <CharacterInformationSection charInfo={charInfo} />
       {/* Status section */}
-      <StatusSection npc={npc} />
+      <StatusSection charInfo={charInfo} />
       {/* Stats section */}
-      <StatsSection stats={npc.stats} />
+      <StatsSection stats={charInfo.stats} />
     </aside>
   );
 };

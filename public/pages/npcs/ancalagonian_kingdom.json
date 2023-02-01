@@ -18,53 +18,88 @@
   ],
   "vabadpulads": [
     {
-      "age": "Early 50s",
-      "also_known_as": [
-        "Chieftain of Vabadpulads",
-        "Voice of the Dragon Elders"
-      ],
-      "creature_type": "Humanoid",
-      "description": {
-        "appearance": "Green blob",
-        "origin": "City"
-      },
-      "family": [
-        {
-          "name": "Broshk (son)",
-          "route": "/npcs/ancalagonian_kingdom/vabadpulads/broshk"
+      "character_info": {
+        "abilities": {
+          "class_features": ["Favored enemy"],
+          "spells": {
+            "fifth_level": ["Wrath Of Nature"],
+            "first_level": ["Animal Friendship"],
+            "fourth_level": ["Conjure Woodland Beings"],
+            "second_level": ["Summon Beast"],
+            "third_level": ["Elemental Weapon"]
+          },
+          "sub_class_features": ["Ranger's companion"]
+        },
+        "notable_items": {
+          "current": [
+            "current item",
+            {
+              "name": "Dyrrn's Tentacle Whip",
+              "route": "http://dnd5e.wikidot.com/wondrous-items:dyrrns-tentacle-whip"
+            }
+          ],
+          "former": ["former item"]
         }
-      ],
-      "image": "/images/npcs/ancalagonian_kingdom/vabadpulads/thak.png",
-      "languages": ["Common", "Draconic", "Primordial"],
+      },
+      "class": "Ranger",
+      "description": {
+        "appearance": [
+          "Thak, the chieftain of the Vabadpulads tribe, was a sight to behold. Despite his advanced age, his green scales still glimmered in the light, though they had faded with the passing of time. As he walked, his leather shoulder pads creaked with each step, while the thick belt around his waist swung with the motion. The cloth hanging from the belt rustled softly, but the true centerpiece of Thak's regalia was the piece of goldenish metal at the center of the belt.",
+          "The intricate design depicted the face of a giant constrictor snake, a symbol of Thak's power and authority. As the representative of the dragon court of elders, he was not only the leader of his tribe, but also held a great deal of influence in the wider world. With a single look, Thak commanded respect, and all who saw him knew that they were in the presence of a true leader."
+        ],
+        "personality": [
+          "Thak is widely regarded as a born leader. He has a natural charisma and an ability to inspire others, which has made him highly respected within his tribe and beyond. Despite his elevated status, Thak is a kind and respectful individual. He is known for his warm demeanor and willingness to help others, even in his old age.",
+          "Thak has a soft spot for animals, and is particularly fond of his companion, a giant constrictor snake. This affection for creatures of all shapes and sizes speaks to Thak's compassionate nature, and his ability to connect with even the most unlikely of creatures.",
+          "With his combination of leadership skills, kindness, and respect for all living things, it is easy to see why Thak is so highly regarded by those around him. His positive personality and leadership style have earned him the loyalty of his tribe and the trust of the dragon court."
+        ]
+      },
       "look-up_name": "thak",
       "name": "Thak",
-      "notable-items": {
-        "current": ["current item"],
-        "former": ["former item"]
-      },
-      "place": "Vabadpulads",
-      "race": "Lizardfolk",
       "relationships": [
         {
-          "description": "Creature name and tempate met at...",
-          "name": "Creature name"
+          "description": [
+            "Thak, the respected chieftain of the Vabadpulads tribe, has a complicated relationship with his son, Broshk. Despite any challenges, Broshk holds a special place in Thak's heart. However, Thak hopes that his son will one day become a great leader and follow in his footsteps.",
+            "Thak dreams of seeing Broshk take up the mantle as the next representative for the dragon court of elders, and lead the city of Vabadpulads with the same wisdom, kindness, and strength that he has demonstrated throughout his own life. Though Thak recognizes that his son still has much to learn and grow, he is confident that with time and guidance, Broshk will become the leader that Vabadpulads needs."
+          ],
+          "name": "Broshk",
+          "route": "/npcs/ancalagonian_kingdom/vabadpulads/broshk"
         }
       ],
       "route": "/npcs/ancalagonian_kingdom/vabadpulads/thak",
       "short_description": "Thak is a lizardfolk in his early 50s and serves as the chieftain of the Vabadpulads tribe. He is also the representative of the dragon court of elders, making him a powerful figure in his community. Thak's position as both chieftain and dragon court representative likely speaks to his leadership abilities and strong ties with both his tribe and the dragons.",
-      "stats": {
-        "ac": "?",
-        "cha": "?",
-        "con": "?",
-        "dex": "?",
-        "hp": "?",
-        "int": "?",
-        "speed": "?ft",
-        "str": "?",
-        "wis": "?"
+      "side_bar_character_info": {
+        "age": "Early 50s",
+        "also_known_as": [
+          "Chieftain of Vabadpulads",
+          "Voice of the Dragon Elders"
+        ],
+        "class": "Ranger (Beast Master Conclave)",
+        "creature_type": "Humanoid",
+        "family": [
+          {
+            "name": "Broshk (son)",
+            "route": "/npcs/ancalagonian_kingdom/vabadpulads/broshk"
+          }
+        ],
+        "image": "/images/npcs/ancalagonian_kingdom/vabadpulads/thak.png",
+        "languages": ["Common", "Draconic", "Primordial"],
+        "place": "Vabadpulads",
+        "race": "Lizardfolk",
+        "stats": {
+          "ac": "?",
+          "cha": "?",
+          "con": "?",
+          "dex": "?",
+          "hp": "?",
+          "int": "?",
+          "speed": "?ft",
+          "str": "?",
+          "wis": "?"
+        },
+        "status": "Alive",
+        "type": "NPC"
       },
-      "status": "Alive",
-      "type": "NPC"
+      "sub_class": "Beast master conclave"
     },
     {
       "look-up_name": "broshk",

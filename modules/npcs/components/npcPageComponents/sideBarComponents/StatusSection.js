@@ -6,7 +6,7 @@ import SideBarLinkListItem from "./SideBarLinkListItem";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
-const StatusSection = ({ npc }) => {
+const StatusSection = ({ charInfo }) => {
   const [showStatus, setShowStatus] = useState(false);
 
   return (
@@ -27,11 +27,18 @@ const StatusSection = ({ npc }) => {
       </div>
       {showStatus && (
         <>
-          {npc.status && <SideBarItem label={"Status"} value={npc.status} />}
-          {npc.cause_of_death && (
-            <SideBarItem label={"Cause of death"} value={npc.cause_of_death} />
+          {charInfo.status && (
+            <SideBarItem label={"Status"} value={charInfo.status} />
           )}
-          {npc.curse && <SideBarItem label={"Curse"} value={npc.curse} />}
+          {charInfo.cause_of_death && (
+            <SideBarItem
+              label={"Cause of death"}
+              value={charInfo.cause_of_death}
+            />
+          )}
+          {charInfo.curse && (
+            <SideBarItem label={"Curse"} value={charInfo.curse} />
+          )}
         </>
       )}
     </section>
