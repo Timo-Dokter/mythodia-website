@@ -1,0 +1,26 @@
+[
+  {
+    "appearance": "(Item name) look like (Something) engraved with ..., etc",
+    "features": [
+      "+1 to attack",
+      "Hitting (creature type) buffs",
+      "Advantage on ..."
+    ],
+    "general_info": {
+      "Attunement": "Yes, by a class or alignment",
+      "Materials": "Steel",
+      "image": "/images/items/magic_items/bag_of_holding.jpeg",
+      "properties": [
+        "+1 to attack",
+        "Hitting (creature type) buffs",
+        "Advantage on ..."
+      ],
+      "rarity": "Artifact",
+      "type": "weapon (any sword)"
+    },
+    "look-up_name": "template_item",
+    "name": "Template item",
+    "short_description": "Short description on the item",
+    "route": "/items/template/template_item"
+  }
+]
