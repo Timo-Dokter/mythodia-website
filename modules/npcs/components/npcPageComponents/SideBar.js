@@ -25,7 +25,7 @@ const SideBar = ({ charInfo, name, setShowImageModal, setModalImageSrc }) => {
       {/* Type section */}
       {charInfo.type && <SideBarItem label={"Type"} value={charInfo.type} />}
       {/* Character info section */}
-      <CharacterInformationSection charInfo={charInfo} />
+      <CharacterInformationSection charInfo={charInfo} name={name} />
       {/* Status section */}
       <StatusSection charInfo={charInfo} />
       {/* Stats section */}

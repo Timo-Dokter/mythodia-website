@@ -2,14 +2,14 @@ import SideBarItem from "./SideBarItem";
 import SideBarListItem from "./SideBarListItem";
 import SideBarLinkListItem from "./SideBarLinkListItem";
 
-const CharacterInformationSection = ({ charInfo }) => {
+const CharacterInformationSection = ({ charInfo, name }) => {
   return (
     <section className="flex flex-col divide-y divide-parchment">
       <div className="px-2 py-3 text-center text-xl font-bold bg-dark-parchment break-words">
         Character information
       </div>
       {/* Name */}
-      <SideBarItem label={"Name"} value={charInfo.name} />
+      <SideBarItem label={"Name"} value={name} />
       {/* Also known as */}
       {charInfo.also_known_as && (
         <SideBarListItem

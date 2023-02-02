@@ -9,6 +9,7 @@ import UnorderedList from "../common/ui/UnorderedList";
 
 import stringToTitle from "../../utils/stringToTitle";
 import SpellsList from "../common/ui/SpellsList";
+import InnateSpellsList from "../common/ui/InnateSpellsList";
 
 const NpcPage = ({ setShowImageModal, setModalImageSrc }) => {
   const [npc, setNpc] = useState({});
@@ -173,6 +174,30 @@ const NpcPage = ({ setShowImageModal, setModalImageSrc }) => {
                     </h4>
                     <SpellsList
                       spellsByLevel={npc.character_info.abilities.spells}
+                    />
+                  </div>
+                )}
+                {npc.character_info.abilities.other_abilities && (
+                  <>
+                    {Object.entries(
+                      npc.character_info.abilities.other_abilities
+                    ).map(([key, description], index) => (
+                      <div className="mt-1" key={index}>
+                        <h4 className="text-lg font-semibold">
+                          {stringToTitle(key)}
+                        </h4>
+                        <p className="mt-2">{description}</p>
+                      </div>
+                    ))}
+                  </>
+                )}
+                {npc.character_info.abilities.innate_spells && (
+                  <div className="mt-1">
+                    <h4 className="text-lg font-semibold">
+                      Innate spellcasting
+                    </h4>
+                    <InnateSpellsList
+                      spells={npc.character_info.abilities.innate_spells}
                     />
                   </div>
                 )}

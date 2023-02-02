@@ -1,19 +1,57 @@
 {
-  "chasan": [
+  "aquatica": [
     {
-      "look-up_name": "justine_shia",
-      "name": "Justine Shia",
-      "route": "/npcs/ancalagonian_kingdom/vabadpulads/justine_shia"
-    },
-    {
-      "look-up_name": "sandro_shia",
-      "name": "Sandro Shia",
-      "route": "/npcs/ancalagonian_kingdom/vabadpulads/sandro_shia"
-    },
-    {
-      "look-up_name": "tua_shia",
-      "name": "Tua Shia",
-      "route": "/npcs/ancalagonian_kingdom/vabadpulads/tua_shia"
+      "character_info": {
+        "abilities": {
+          "innate_spells": {
+            "description": "Jodos's spellcasting ability is Wisdom (spell save DC 12). It can innately cast the following spells, requiring no material components",
+            "one_day_each": ["Fog cloud", "Gust of wind"]
+          },
+          "other_abilities": {
+            "Amphibious": "Jodos can breathe air and water",
+            "nimble_escape": "Jodos can take the Disengage or Hide actions as a bonus action on each of its turns."
+          }
+        },
+        "notable_items": {
+          "current": ["Wooden box"]
+        }
+      },
+      "description": {
+        "appearance": [
+          "Jodos Sulodath is a young man with a striking appearance. His tribal yet elegant attire around his waist sets him apart, with cloths extending upwards to connect with a necklace. He carries a large wooden box on his back, which he balances with ease. However, Jodos does not appear confident in himself, as he walks with a hint of hesitance in his step.",
+          "Despite this, his powerful stature and the trident that rests under his wooden box, suggest that he is a man of strength and ability. The trident, a symbol of his mastery in sailing, serves as a reminder of his potential. Overall, Jodos' appearance conveys a mix of tribal elegance and uncertainty, making him a unique and intriguing figure."
+        ],
+        "personality": [
+          "Jodos Sulodath is a kind-hearted individual, but his nerves often get the better of him. He is plagued by self-doubt and is known to second-guess himself in nearly every situation. His nervousness is evident in the way he walks, as he takes each step with hesitation.",
+          "However, there is one place where Jodos truly shines - on his ship. Being at sea gives him a sense of confidence, and he becomes more sure of himself. Jodos' kindness and his love for the sea make him an endearing character, despite his nerves and self-doubt."
+        ]
+      },
+      "look-up_name": "jodos",
+      "name": "Jodos",
+      "route": "/npcs/ancalagonian_kingdom/aquatica/jodos",
+      "short_description": "Jodos Sulodath is a young Trition in his early 20s. He carries a large wooden box on his back and is a skilled sailor, but he struggles with self-doubt about his abilities. Despite this uncertainty, Jodos remains determined to hone his skills and become a master sailor.",
+      "side_bar_character_info": {
+        "age": "Early 20s",
+        "also_known_as": ["The master sailor of Aquatica"],
+        "creature_type": "Humanoid",
+        "image": "/images/characters/npcs/ancalagonian_kingdom/aquatica/jodos.jpg",
+        "languages": ["Aquan", "Common", "Primordial"],
+        "place": "Aquatica",
+        "race": "Triton",
+        "stats": {
+          "ac": "13",
+          "cha": "11",
+          "con": "14",
+          "dex": "16",
+          "hp": "32",
+          "int": "10",
+          "speed": "30ft, 30ft (swim)",
+          "str": "11",
+          "wis": "15"
+        },
+        "status": "Alive",
+        "type": "NPC"
+      }
     }
   ],
   "vabadpulads": [
