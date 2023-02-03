@@ -1,6 +1,6 @@
-import SideBarItem from "./SideBarItem";
-import SideBarListItem from "./SideBarListItem";
-import SideBarLinkListItem from "./SideBarLinkListItem";
+import SideBarItem from "../../../../common/ui/sideBar/SideBarItem";
+import SideBarListItem from "../../../../common/ui/sideBar/SideBarListItem";
+import SideBarLinkListItem from "../../../../common/ui/sideBar/SideBarLinkListItem";
 
 const CharacterInformationSection = ({ charInfo, name }) => {
   return (

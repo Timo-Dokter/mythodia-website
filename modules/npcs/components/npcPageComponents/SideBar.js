@@ -1,5 +1,5 @@
 import CharacterInformationSection from "./sideBarComponents/CharacterInformationSection";
-import SideBarItem from "./sideBarComponents/SideBarItem";
+import SideBarItem from "../../../common/ui/sideBar/SideBarItem";
 import StatsSection from "./sideBarComponents/StatsSection";
 import StatusSection from "./sideBarComponents/StatusSection";
 

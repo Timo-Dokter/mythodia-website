@@ -30,8 +30,6 @@ const StatePage = () => {
               const key = entry[0];
               let value = {};
 
-              console.log(entry);
-
               entry[1]
                 .sort((a, b) =>
                   a.name.toLowerCase() > b.name.toLowerCase()
@@ -50,7 +48,6 @@ const StatePage = () => {
                 }, value);
 
               npcData[state][key] = value;
-              console.log(value);
             });
 
             setNpcData(npcData);

@@ -1,7 +1,7 @@
-import SideBarItem from "./SideBarItem";
-import SideBarListItem from "./SideBarListItem";
-import SideBarLinkListItem from "./SideBarLinkListItem";
-import SideBarGridItem from "./SideBarGridItem";
+import SideBarItem from "../../../../common/ui/sideBar/SideBarItem";
+import SideBarListItem from "../../../../common/ui/sideBar/SideBarListItem";
+import SideBarLinkListItem from "../../../../common/ui/sideBar/SideBarLinkListItem";
+import SideBarGridItem from "../../../../common/ui/sideBar/SideBarGridItem";
 
 const StatsSection = ({ stats }) => {
   return (
