@@ -1,1 +1,31 @@
-[]
+[
+  {
+    "appearance": "The ring of facial hair is a small ring to be worn on someone's fingers, when put on a finger that is too small or to big it resizes to fit the finger. The ring is made of steelish metal with small engravings of different kinds of facial hair.",
+    "features": [
+      "Left pinkie: Goatee: A small patch of hair on the chin that resembles a goat's beard.",
+      "Left ring Finger: Full beard: A beard that covers the entire face and neck, including the chin, upper lip, and cheeks.",
+      "Left middle finger: Sideburns: Hair that grows on the sides of the face, extending from the hairline down towards the jaw.",
+      "Left index finger: Mutton chops: Large sideburns that extend down to the jaw and curve outwards, resembling the chops of a sheep.",
+      "Left thumb: Moustache: Hair that grows on the upper lip.",
+      "Right thumb: Van Dyke: A beard that consists of a moustache and a goatee, but no hair on the cheeks.",
+      "Right index finger: Soul patch: A small patch of hair under the lower lip, also known as a flavor saver.",
+      "Right middle finger: Fu Manchu: A moustache that extends downward past the chin, resembling the facial hair of the fictional character Fu Manchu.",
+      "Right ring finger: Handlebar moustache: A moustache with long, curved ends that resemble the handlebars of a bicycle.",
+      "Ring pinkie: Chinstrap: A thin line of hair that runs along the jawline, connecting the sideburns to the goatee or beard."
+    ],
+    "side_bar_info": {
+      "attunement": "No",
+      "materials": "Steel",
+      "image": "/images/items/magic_items/ring_of_facial_hair.jpg",
+      "properties": [
+        "Gives a different kinds of facial hair when worn on different fingers"
+      ],
+      "rarity": "Common",
+      "type": "Wondrous item"
+    },
+    "look-up_name": "ring_of_facial_hair",
+    "name": "Ring of facial hair",
+    "short_description": "A ring to be worn a finger, when put on a finger it changes it size to fit the finger. The ring gives the person wearing it a different kind of facial hair when put on a different finger.",
+    "route": "/items/magic_items/ring_of_facial_hair"
+  }
+]

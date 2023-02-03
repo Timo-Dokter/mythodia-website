@@ -6,9 +6,9 @@
       "Hitting (creature type) buffs",
       "Advantage on ..."
     ],
-    "general_info": {
-      "Attunement": "Yes, by a class or alignment",
-      "Materials": "Steel",
+    "side_bar_info": {
+      "attunement": "Yes, by a class or alignment",
+      "materials": "Steel",
       "image": "/images/items/magic_items/bag_of_holding.jpeg",
       "properties": [
         "+1 to attack",
